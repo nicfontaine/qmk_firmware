@@ -10,6 +10,8 @@
     #include "5x7.h"
 #elif KEYBOARD_handwired_dactyl_manuform_6x6
     #include "6x6.h"
+#elif KEYBOARD_handwired_dactyl_manuform_fontaine
+    #include "fontaine.h"
 #endif
 
 //void promicro_bootloader_jmp(bool program);
