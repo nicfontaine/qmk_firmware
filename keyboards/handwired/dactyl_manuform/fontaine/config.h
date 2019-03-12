@@ -22,6 +22,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define PRODUCT         FonDak
 
+#define MASTER_RIGHT
+
 /* key matrix size */
 // Rows are doubled-up
 #define MATRIX_ROWS 12
