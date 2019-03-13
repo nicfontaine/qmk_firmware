@@ -42,8 +42,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
 */
-#define MATRIX_ROW_PINS { F6, B1, B3, B6, B5 }
-#define MATRIX_COL_PINS { D1, D0, F5, F4 }
+// #define MATRIX_ROW_PINS { F6, B1, B3, B6, B5 }
+//  #define MATRIX_COL_PINS { D1, D0, F5, F4 }
+
+// FOR ZEALIO PAD
+#define MATRIX_ROW_PINS { D0, D5, B5, B6, B7 }
+#define MATRIX_COL_PINS { C6, B0, F0, F1 }
+
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
