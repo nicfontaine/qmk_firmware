@@ -70,6 +70,7 @@
  * http://www.fourwalledcubicle.com/files/LUFA/Doc/120730/html/_page__software_bootloader_start.html
  */
 #define BOOTLOADER_RESET_KEY 0xB007B007
+<<<<<<< HEAD
     
 /**
  * ERROR: address 0x8001f8 out of range...
@@ -77,6 +78,9 @@
  */
 // uint32_t reset_key  __attribute__ ((section (".noinit")));
 uint32_t reset_key __attribute__ ((section (".noinit,\"aw\",@nobits;")));
+=======
+uint32_t reset_key  __attribute__ ((section (".noinit,\"aw\",@nobits;")));
+>>>>>>> upstream/master
 
 /** \brief initialize MCU status by watchdog reset
  *
