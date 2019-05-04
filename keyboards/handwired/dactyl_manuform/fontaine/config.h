@@ -38,10 +38,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // LED
 /* WS2812 RGB LED */
 #define RGB_DI_PIN D3
-#define RGBLED_NUM 10
-#define RGBLED_SPLIT
+#define RGBLED_NUM 20
+// #define RGBLED_SPLIT
 
-// #define RGBLED_SPLIT { 10, 10 }
+#define RGBLED_SPLIT { 10, 10 }
 // #define RGBLIGHT_SAT_STEP 17
 // #define RGBLIGHT_VAL_STEP 17
 

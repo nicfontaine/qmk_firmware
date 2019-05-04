@@ -77,10 +77,7 @@
  * https://www.reddit.com/r/olkb/comments/94duwj/issue_flashing_lets_split/
  */
 // uint32_t reset_key  __attribute__ ((section (".noinit")));
-uint32_t reset_key __attribute__ ((section (".noinit,\"aw\",@nobits;")));
-=======
 uint32_t reset_key  __attribute__ ((section (".noinit,\"aw\",@nobits;")));
->>>>>>> upstream/master
 
 /** \brief initialize MCU status by watchdog reset
  *
