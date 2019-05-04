@@ -1,7 +1,3 @@
-// #include "keymap_common.h"
-// #include "backlight.h"
-// #include "debug.h"
-
 #include QMK_KEYBOARD_H
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

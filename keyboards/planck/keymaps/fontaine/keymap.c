@@ -16,14 +16,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * | DEL  |   Z  |   X  |   C  |   V  |   B  |   K  |   M  |   ,  |   .  |   /  |Enter |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | ESC  | GUI  | ALT  | SFT  | CRTL |    SPACE    | FN1  | FN2  |      |      |PRNT  |
+ * | ESC  | GUI  | ALT  | CTRL | SFT  |    SPACE    | FN1  | FN2  |      |      |PRNT  |
  * `-----------------------------------------------------------------------------------'
  */
 [0] = LAYOUT_planck_mit(
   KC_TAB, KC_Q, KC_W, KC_F, KC_P, KC_G, KC_J, KC_L, KC_U, KC_Y, KC_SCLN, KC_MINS,
   KC_BSPC, KC_A, KC_R, KC_S, KC_T, KC_D, KC_H, KC_N, KC_E, KC_I, KC_O, KC_QUOT,
   KC_DEL, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_K, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_ENT,
-  KC_ESC, KC_LGUI, KC_LALT, KC_LSFT, KC_RCTRL, KC_SPC, M(1), M(2), KC_TRNS, KC_TRNS, KC_PSCR
+  KC_ESC, KC_LGUI, KC_LALT, KC_RCTRL, KC_LSFT, KC_SPC, M(1), M(2), XXXXXXX, XXXXXXX, KC_PSCR
 ),
 
 /* Lower
