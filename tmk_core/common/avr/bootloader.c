@@ -70,7 +70,6 @@
  * http://www.fourwalledcubicle.com/files/LUFA/Doc/120730/html/_page__software_bootloader_start.html
  */
 #define BOOTLOADER_RESET_KEY 0xB007B007
-<<<<<<< HEAD
     
 /**
  * ERROR: address 0x8001f8 out of range...

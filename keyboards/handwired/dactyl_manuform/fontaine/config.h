@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define PRODUCT         FonDak
 
-#define MASTER_RIGHT
+// #define MASTER_LEFT
 
 /* key matrix size */
 // Rows are doubled-up
@@ -40,7 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN D3
 #define RGBLED_NUM 20
 // #define RGBLED_SPLIT
-
 #define RGBLED_SPLIT { 10, 10 }
 // #define RGBLIGHT_SAT_STEP 17
 // #define RGBLIGHT_VAL_STEP 17
