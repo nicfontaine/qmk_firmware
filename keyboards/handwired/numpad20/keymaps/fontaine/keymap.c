@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     *    ,---------------------------.
     *    | VLUP | MUTE | STOP | PLAY |
     *    |----------------------------
-    *    | VLDN |      | PREV | NEXT |
+    *    | VLDN |AUTOG | PREV | NEXT |
     *    |----------------------------
     *    | WHUP |      | MUTE | TO 0 |
     *    |----------------------------
@@ -36,8 +36,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     *    `---------------------------'
     */
     KC_VOLU, KC_MUTE, KC_MSTP,  KC_MPLY, \
-    KC_VOLD, KC_NO,   KC_MPRV,  KC_MNXT, \
-    KC_WH_U, KC_NO,   KC_MUTE,  TO(0),   \
+    KC_VOLD, KC_PAUSE,   KC_MPRV,  KC_MNXT, \
+    KC_WH_U, KC_NO,   KC_PAUSE,  TO(0),   \
     KC_WH_D, KC_UP,   KC_WREF,  KC_SPC,  \
     KC_LEFT, KC_DOWN, KC_RIGHT, KC_ENT  \
   )

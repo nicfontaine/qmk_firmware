@@ -31,8 +31,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [SYM] = LAYOUT_fontaine(
     _______,_______,_______,_______,_______,_______,      _______,_______,_______,_______,_______,_______,
     KC_GRV ,KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,      KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,KC_EQL ,
-    _______,RGB_HUI,RGB_SAI,RGB_VAI,KC_PGUP,KC_DEL ,      _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,_______,
-    _______,RGB_HUD,RGB_SAD,RGB_VAD,KC_PGDN,KC_ESC ,      _______,KC_HOME,KC_END ,_______,KC_BSLS,_______,
+    _______,RGB_HUI,RGB_SAI,RGB_VAI,KC_PGUP,KC_DEL ,      KC_LBRC,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,_______,
+    _______,RGB_HUD,RGB_SAD,RGB_VAD,KC_PGDN,KC_ESC ,      KC_RBRC,KC_HOME,KC_END ,_______,KC_BSLS,_______,
     RGB_TOG,_______,_______,_______,_______,                      _______,_______,_______,_______,_______,
     _______,_______,_______,_______,_______,_______,      _______,_______,_______,_______,_______,_______
   ),
