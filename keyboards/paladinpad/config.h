@@ -7,7 +7,7 @@
 #define VENDOR_ID       0xFEED
 #define PRODUCT_ID      0x6060
 #define MANUFACTURER    inachie
-#define PRODUCT         paladinpad
+#define PRODUCT         ADK18
 #define DESCRIPTION     PaladinPad ALPS Numpad
 
 /* key matrix size */
