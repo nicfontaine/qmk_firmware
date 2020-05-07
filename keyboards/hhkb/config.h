@@ -28,6 +28,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT         HHKB mod
 #define DESCRIPTION     q.m.k keyboard firmware for HHKB
 
+// #define AUTO_SHIFT_TIMEOUT 150
+// #define NO_AUTO_SHIFT_SPECIAL
+// #define NO_AUTO_SHIFT_NUMERIC
+
 /* key matrix size */
 #ifdef HHKB_JP
 #   define MATRIX_ROWS 16
