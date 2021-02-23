@@ -1,9 +1,3 @@
-# iso layout with a split spacebar
-
-i needed to have an ISO layout
-and i wanted to have a split spacebar
-i couldn't find anything ready so i cobbled this together
-
 LAYER 0 - Typing
 this is basically the standard iso layout with the addition of the split spacebar
 menu key (KC_APP) is used to move to the next layer

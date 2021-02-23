@@ -29,8 +29,8 @@
 #define RGB_XMS RGB_M_X   //rgb christmas
 #define RGB_BL_MODE    rgblight_mode_noeeprom(3)              //rgb mode for BL layer
 #define RGB_BL_LIGHT   rgblight_sethsv_noeeprom_turquoise()   //rgb light for BL layer
-#define RGB_FL_MODE    rgblight_mode_noeeprom(1)             //rgb mode for FL layer
-#define RGB_FL_LIGHT   rgblight_sethsv_noeeprom_orange()      //rgb light for FL layer
+#define RGB_DT_MODE    rgblight_mode_noeeprom(1)             //rgb mode for FL layer
+#define RGB_DT_LIGHT   rgblight_sethsv_noeeprom_orange()      //rgb light for FL layer
 #define RGB_NL_MODE    rgblight_mode_noeeprom(12)             //rgb mode for NL layer
 #define RGB_NL_LIGHT   rgblight_sethsv_noeeprom_turquoise()       //rgb light for NL layer
 #define RGB_RL_MODE    rgblight_mode_noeeprom(22)             //rgb mode for RL layer
@@ -38,18 +38,18 @@
       
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	
-  /* Keymap BL: Base Layer (Default Layer)
+  /* Keymap BL: Base
    *
    * ,-----------------------------------------------------------.
-   * | ' | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = |Backsp |
+   * |Del | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|  |   |
    * |-----------------------------------------------------------|
-   * | Tab | q | w | e | r | t | y | u | i | o | p | [ | ] |enter|
-   * |------------------------------------------------------     |
-   * | Caps  | a | s | d | f | g | h | j | k | l | ; | ' | # |   |
+   * | Tab | q | w | f | p | g | \ | j | l | u | y | ; | - |     |
+   * |------------------------------------------------------ Ent |
+   * |Backsp| a | r | s | t | d |PgU| h | n | e | i | o | ' |    |
    * |-----------------------------------------------------------|
-   * |Shft    | z | x | c | v | b | n | m | , | . | /    | Up|Prt|
+   * |Shft   | z | x | c | v | b |PgD| k | m | , | . | / | Up|Prt|
    * |-----------------------------------------------------------|
-   * |Ctrl|Gui |Alt | Space  | FN |  Space   |Alt|Gui|Lft|Dwn|Rgt|
+   * |Esc|Gui |Alt |  Ctrl  | Spc |    FN    |Alt|Num|Lft|Dwn|Rgt|
    * `-----------------------------------------------------------'
    */
    [BL] = LAYOUT_iso_fontaine(
@@ -60,6 +60,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_LSFT,      KC_Z,      KC_X,      KC_C,      KC_V,      KC_B,      KC_PGDN,   KC_K,      KC_M,      KC_COMM,   KC_DOT,    KC_SLSH,   KC_UP,    KC_PSCR,
       KC_ESC,  KC_LGUI,  KC_LALT,             KC_LCTL,          KC_SPC,              MO(FL),                KC_RALT,   MO(NL),     KC_LEFT,   KC_DOWN,  KC_RIGHT),
 
+   /* Keymap DT: Dota
+    * ,-----------------------------------------------------------.
+    * |Del | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|  |   |
+    * |-----------------------------------------------------------|
+    * | Tab | q | w | f | p | g | \ | j | l | u | y | ; | - |     |
+    * |------------------------------------------------------ Ent |
+    * |Backsp| a | r | s | t | d |PgU| h | n | e | i | o | ' |    |
+    * |-----------------------------------------------------------|
+    * |Shft   | z | x | c | v | b |PgD| k | m | , | . | / | Up|Prt|
+    * |-----------------------------------------------------------|
+    * |Esc|Gui |Alt |  Ctrl  | Spc |    F8    |Alt|Num|Lft|Dwn|Rgt|
+    * `-----------------------------------------------------------'   */
    [DT] = LAYOUT_iso_fontaine(
       //  1          2          3          4          5          6          7          8          9          10         11         12         13         14
       _______, _______,  _______,  _______,   _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______, _______,
@@ -68,6 +80,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,    _______,  _______,  _______,  _______,  _______,   _______,   _______,   _______,        _______,  _______,  _______, _______, _______,
       _______, _______,_______,          _______,                   _______,            KC_F8,           _______,  _______,  _______, _______, _______),
 
+   /* Keymap FL: Functions
+    * ,-----------------------------------------------------------.
+    * |    |   |   |   |   |   |   |   |   |   |   |   |   |  |   |
+    * |-----------------------------------------------------------|
+    * |     | 1 | 2 | 3 | 4 | 5 |   | 6 | 7 | 8 | 9 | 0 | = |     |
+    * |------------------------------------------------------     |
+    * |      |Vl+|Mut|Stp|Ply|PgU|   | [ | L | U | D | R | ` |    |
+    * |-----------------------------------------------------------|
+    * |       |Vl-|Pau|Prv|Nxt|PgD|   | ] |Hom|End|   | \ |   |   |
+    * |-----------------------------------------------------------|
+    * |   |    |    |        |     |          |   |   |   |   |   |
+    * `-----------------------------------------------------------'   */
    [FL] = LAYOUT_iso_fontaine(
    //  1          2          3          4          5          6          7          8          9          10         11         12         13         14
       _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,     _______, _______,
@@ -76,6 +100,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,      KC_VOLD,   KC_PAUSE,  KC_MPRV,   KC_MNXT,   KC_PGDN,   _______,   KC_RBRC,   KC_HOME,   KC_END,    _______,   KC_BSLS,   _______,  _______,
       _______, _______,  _______,             _______,          _______,              _______,              _______,   _______,   _______,   _______,  _______),
 
+   /* Keymap FL: Numpag
+    * ,-----------------------------------------------------------.
+    * |NmLk| + | - | * | / |   |   |   |   |   |   |  | BL| DT| RL|
+    * |-----------------------------------------------------------|
+    * |     | 7 | 8 | 9 |   |   |   |   |   |   |   |   |   |     |
+    * |------------------------------------------------------     |
+    * |      | 4 | 5 | 6 |   |   |   |   |   |   |   |   |   |    |
+    * |-----------------------------------------------------------|
+    * |       | 1 | 2 | 3 |   |   |   |   |   |   |   |   |   |   |
+    * |-----------------------------------------------------------|
+    * |   | .  | 0  |        | Ent |          |   |   |   |   |   |
+    * `-----------------------------------------------------------'   */
    [NL] = LAYOUT_iso_fontaine(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
 	    KC_NLCK, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS,  _______,   _______,   _______,   _______,   _______,   _______,   _______, TO(BL),   TO(DT),    TO(RL),
@@ -85,9 +121,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_PDOT,KC_P0,          KC_SPC,                   KC_ENT,            _______,      _______,  _______, _______, _______, _______),
 
   /* Keymap RL: RGB Layer
-   *
    * ,-----------------------------------------------------------.
-   * |BL |   |   |   |   |   |   |   |   |   |   |   |   |Reset  |
+   * |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
    * |-----------------------------------------------------------|
    * |     |tog|mod|hui|hud|   |   |sai|sad|vai|vad|   |   |     |
    * |------------------------------------------------------     |
@@ -95,20 +130,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * |-----------------------------------------------------------|
    * |    |   |bd |bt |bi |bs |   |   |   |   |   |   |          |
    * |-----------------------------------------------------------|
-   * |    |    |    |        |    |         |    |    | BL |     |
-   * `-----------------------------------------------------------'
-   */
+   * |    |    |    |        |    |         |    |    |    |     |
+   * `-----------------------------------------------------------'   */
    [RL] = LAYOUT_iso_fontaine(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
 	     _______,    _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______, _______,
         _______,   RGB_TOG,   RGB_MOD,   RGB_HUI,   RGB_HUD,   _______,   _______,   RGB_SAI,   RGB_SAD,   RGB_VAI,   RGB_VAD,   _______,   _______,
         _______,   RGB_STA,   RGB_BRE,   RGB_RAI,   RGB_SWI,   _______,   _______,   RGB_SNA,   RGB_KNI,   RGB_GRA,   RGB_XMS,   _______,   _______,   _______,
         _______,   BL_DEC,    BL_TOGG,   BL_INC,    BL_STEP,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,
-        _______,   _______,   _______,   _______,   _______,    _______,   _______,   _______,   _______,   _______,   _______),
-        
-
+        _______,   _______,   _______,   _______,   _______,    _______,   _______,   _______,   _______,   _______,   _______),       
 };
-
 
 void persistent_default_layer_set(uint16_t default_layer) {
   eeconfig_update_default_layer(default_layer);
@@ -131,9 +162,9 @@ void matrix_scan_user(void) {
           RGB_BL_MODE;
           RGB_BL_LIGHT;        
         break;
-      case FL:
-          RGB_FL_MODE;
-          RGB_FL_LIGHT;  
+      case DT:
+          RGB_DT_MODE;
+          RGB_DT_LIGHT;  
         break;
       case NL:
           RGB_NL_MODE; 
