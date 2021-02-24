@@ -159,15 +159,15 @@ void matrix_scan_user(void) {
   if (old_layer != new_layer) {
     switch (new_layer) {
       case BL:
-          RGB_BL_MODE;
-          RGB_BL_LIGHT;        
+          RGB_NL_MODE;
+          RGB_NL_LIGHT;        
         break;
       case DT:
           RGB_DT_MODE;
           RGB_DT_LIGHT;  
         break;
       case NL:
-          RGB_NL_MODE; 
+          // RGB_NL_MODE; 
          // RGB_NL_LIGHT; 
         break;
       case RL:
