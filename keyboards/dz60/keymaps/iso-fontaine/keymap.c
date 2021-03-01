@@ -41,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* Keymap BL: Base
    *
    * ,-----------------------------------------------------------.
-   * |Del | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|  |   |
+   * |Del | F1| F2| F3| F4| F5| F6| F7| F8| F9|F10|F11|F12|- | = |
    * |-----------------------------------------------------------|
    * | Tab | q | w | f | p | g | \ | j | l | u | y | ; | - |     |
    * |------------------------------------------------------ Ent |
@@ -54,11 +54,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    */
    [BL] = LAYOUT_iso_fontaine(
       //  1        2          3          4          5          6          7          8          9          10         11         12         13         14
-      KC_DEL,    KC_F1,     KC_F2,     KC_F3,     KC_F4,     KC_F5,     KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,     KC_F12, KC_BSPC, KC_BSPC,
+      KC_DEL,    KC_F1,     KC_F2,     KC_F3,     KC_F4,     KC_F5,     KC_F6,     KC_F7,     KC_F8,     KC_F9,     KC_F10,    KC_F11,     KC_F12, KC_MINS, KC_EQL,
       KC_TAB ,    KC_Q,      KC_W,      KC_F,      KC_P,      KC_G,      KC_BSLS,   KC_J,      KC_L,      KC_U,      KC_Y,      KC_SCLN,   KC_MINS,
       KC_BSPC,     KC_A,      KC_R,      KC_S,      KC_T,      KC_D,      KC_PGUP,   KC_H,      KC_N,      KC_E,      KC_I,      KC_O,      KC_QUOT,   KC_ENT,
       KC_LSFT,      KC_Z,      KC_X,      KC_C,      KC_V,      KC_B,      KC_PGDN,   KC_K,      KC_M,      KC_COMM,   KC_DOT,    KC_SLSH,   KC_UP,    KC_PSCR,
-      KC_ESC,  KC_LGUI,  KC_LALT,             KC_LCTL,          KC_SPC,              MO(FL),                KC_RALT,   MO(NL),     KC_LEFT,   KC_DOWN,  KC_RIGHT),
+      KC_ESC,  KC_LGUI,  KC_LALT,             KC_LCTL,          KC_SPC,              MO(FL),                MO(FL),   MO(NL),     KC_LEFT,   KC_DOWN,  KC_RIGHT),
 
    /* Keymap DT: Dota
     * ,-----------------------------------------------------------.
