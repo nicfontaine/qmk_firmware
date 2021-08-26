@@ -86,9 +86,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-----------------------------------------------------------|
     * |     | 1 | 2 | 3 | 4 | 5 |   | 6 | 7 | 8 | 9 | 0 | = |     |
     * |------------------------------------------------------     |
-    * |      |Vl+|Mut|Stp|Ply|PgU|   | [ | L | U | D | R | ` |    |
+    * |      |Vl+|Mut|Stp|Ply|PgU|   | [ | L | U | R | ` |   |    |
     * |-----------------------------------------------------------|
-    * |       |Vl-|Pau|Prv|Nxt|PgD|   | ] |Hom|End|   | \ |   |   |
+    * |       |Vl-|Pau|Prv|Nxt|PgD|   | ] |HOM| D |END| \ |   |   |
     * |-----------------------------------------------------------|
     * |   |    |    |        |     |          |   |   |   |   |   |
     * `-----------------------------------------------------------'   */
@@ -96,8 +96,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    //  1          2          3          4          5          6          7          8          9          10         11         12         13         14
       _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,     _______, _______,
       _______,    KC_1,      KC_2,      KC_3,      KC_4,      KC_5,      _______,   KC_6,      KC_7,      KC_8,      KC_9,      KC_0,      KC_EQL,
-      _______,     KC_VOLU,   KC_MUTE,   KC_MSTP,   KC_MPLY,   KC_PGUP,   _______,   KC_LBRC,   KC_LEFT,   KC_UP,     KC_DOWN,   KC_RGHT,    KC_GRV,   _______,
-      _______,      KC_VOLD,   KC_PAUSE,  KC_MPRV,   KC_MNXT,   KC_PGDN,   _______,   KC_RBRC,   KC_HOME,   KC_END,    _______,   KC_BSLS,   _______,  _______,
+      _______,     KC_VOLU,   KC_MUTE,   KC_MSTP,   KC_MPLY,   KC_PGUP,   _______,   KC_LBRC,   KC_LEFT,   KC_UP,     KC_RIGHT,   KC_GRV,    _______,   _______,
+      _______,      KC_VOLD,   KC_PAUSE,  KC_MPRV,   KC_MNXT,   KC_PGDN,   _______,   KC_RBRC,   KC_HOME,   KC_DOWN,    KC_END,   KC_BSLS,   _______,  _______,
       _______, _______,  _______,             _______,          _______,              _______,              _______,   _______,   _______,   _______,  _______),
 
    /* Keymap FL: Numpag
