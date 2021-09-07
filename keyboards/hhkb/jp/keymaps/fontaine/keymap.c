@@ -53,8 +53,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [1] = LAYOUT_JP(
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_INS, KC_DEL,
         KC_GRV, KC_1, KC_2, KC_3, KC_4, KC_5, _______, KC_6, KC_7, KC_8, KC_9, KC_0, KC_EQL,
-        _______, KC_VOLU, KC_MUTE, KC_MSTP, KC_MPLY, KC_PGUP, _______, KC_LBRC, KC_LEFT, KC_UP, KC_DOWN, KC_RGHT, KC_GRV, KC_PENT,
-        _______, KC_VOLD, KC_PAUSE, KC_MPRV, KC_MNXT, KC_PGDN, _______, KC_RBRC, KC_HOME, KC_END, _______, KC_BSLS, _______, _______,
+        _______, KC_VOLU, KC_MUTE, KC_MSTP, KC_MPLY, KC_PGUP, _______, KC_LBRC, KC_LEFT, KC_UP, KC_RIGHT, KC_GRV, _______, KC_PENT,
+        _______, KC_VOLD, KC_PAUSE, KC_MPRV, KC_MNXT, KC_PGDN, _______, KC_RBRC, KC_HOME, KC_DOWN, KC_END, KC_BSLS, _______, _______,
         _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______),
 
     [2] = LAYOUT_JP(
