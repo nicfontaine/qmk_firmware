@@ -20,7 +20,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "config_common.h"
 
-#define PRODUCT         FonDak
+#define PRODUCT_ID 0x3636
+#define DEVICE_VER 0x0001
+#define PRODUCT    FonDak
 
 // #define MASTER_LEFT
 
@@ -32,6 +34,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // right to left
 #define MATRIX_COL_PINS { B5, B4, E6, D7, C6, D4 }
 #define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
+
+#define DIODE_DIRECTION COL2ROW
 
 // trrs to D0
 
