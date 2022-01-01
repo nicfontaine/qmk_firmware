@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       _______,      KC_VOLD,   KC_PAUSE,  KC_MPRV,   KC_MNXT,   KC_PGDN,   _______,   KC_RBRC,   KC_HOME,   KC_DOWN,    KC_END,   KC_BSLS,   _______,  _______,
       _______, _______,  _______,             _______,          _______,              _______,              _______,   _______,   _______,   _______,  _______),
 
-   /* Keymap FL: Numpag
+   /* Keymap FL: Numpad
     * ,-----------------------------------------------------------.
     * |NmLk| + | - | * | / |   |   |   |   |   |   |  | BL| DT| RL|
     * |-----------------------------------------------------------|
@@ -134,21 +134,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-----------------------------------------------------------'   */
    [RL] = LAYOUT_iso_fontaine(
 	//  1          2          3          4          5          6          7          8          9          10         11         12         13         14
-	     _______,    _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______, _______,
+	     _______,    _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,    _______, RESET,
         _______,   RGB_TOG,   RGB_MOD,   RGB_HUI,   RGB_HUD,   _______,   _______,   RGB_SAI,   RGB_SAD,   RGB_VAI,   RGB_VAD,   _______,   _______,
         _______,   RGB_STA,   RGB_BRE,   RGB_RAI,   RGB_SWI,   _______,   _______,   RGB_SNA,   RGB_KNI,   RGB_GRA,   RGB_XMS,   _______,   _______,   _______,
         _______,   BL_DEC,    BL_TOGG,   BL_INC,    BL_STEP,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,   _______,
         _______,   _______,   _______,   _______,   _______,    _______,   _______,   _______,   _______,   _______,   _______),       
 };
 
-void persistent_default_layer_set(uint16_t default_layer) {
-  eeconfig_update_default_layer(default_layer);
-  default_layer_set(default_layer);
-}
-
+// void persistent_default_layer_set(uint16_t default_layer) {
+//   eeconfig_update_default_layer(default_layer);
+//   default_layer_set(default_layer);
+// }
 
 // layer-activated RGB underglow
-
 void matrix_scan_user(void) {
 
   #ifdef RGBLIGHT_ENABLE
