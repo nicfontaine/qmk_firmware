@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT    FonDak
 
 // #define MASTER_LEFT
+#define MASTER_RIGHT
 
 /* key matrix size */
 // Rows are doubled-up
@@ -36,6 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_ROW_PINS { F6, F7, B1, B3, B2, B6 }
 
 #define DIODE_DIRECTION COL2ROW
+
 
 // trrs to D0
 
